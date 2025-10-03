@@ -1,0 +1,68 @@
+.pr-form {
+  display: grid;
+  gap: 10px;
+}
+
+.pr-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 640px) {
+  .pr-row { grid-template-columns: 1fr; }
+}
+
+.pr-input,
+.pr-textarea,
+.pr-select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--pr-border-strong);
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.pr-textarea { resize: vertical; }
+.pr-textarea--tall { height: 140px; }
+
+.pr-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pr-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.pr-btn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: #fff;
+  color: #111;
+}
+
+.pr-btn--primary {
+  background: var(--pr-primary);
+  color: #fff;
+  border-color: var(--pr-primary);
+}
+
+.pr-btn--ghost {
+  background: #fff;
+  color: var(--pr-primary);
+  border-color: var(--pr-primary);
+}
+
+.pr-btn--link {
+  background: none;
+  border: none;
+  color: var(--pr-primary);
+  padding: 0;
+  cursor: pointer;
+}
